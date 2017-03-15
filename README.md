@@ -3,5 +3,18 @@
 该项目源于pinyin-text-view，对其做了一些修正后进行了进一步的优化与扩展
 
 
+Step 1. 
 
-看到这行字代表目前不可用！！！！！本人正在编辑准备提交!!!!!!!!!
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+  Step 2.
+  
+  dependencies {
+	        compile 'com.github.SundarFung:sundarPinyinText:1.0.0'
+	}
+  
