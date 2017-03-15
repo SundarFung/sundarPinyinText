@@ -15,23 +15,24 @@ Step 1.
   
   Step 2.
   
-  dependencies 
-  	{
+  	dependencies 
+  		{
 	        compile 'com.github.SundarFung:sundarPinyinText:1.0.0'
-		
-	}
+		}
   
 
 
 maven:
 
 Step 1.
-<repositories>
+
+	<repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
 		</repository>
 	</repositories>
+	
 
 Step 2. 
 
