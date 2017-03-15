@@ -23,6 +23,7 @@ Step 1.
 
 
 maven:
+
 Step 1.
 <repositories>
 		<repository>
