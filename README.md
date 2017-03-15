@@ -15,7 +15,8 @@ Step 1.
   
   Step 2.
   
-  dependencies {
+  dependencies 
+  	{
 	        compile 'com.github.SundarFung:sundarPinyinText:1.0.0'
 		
 	}
