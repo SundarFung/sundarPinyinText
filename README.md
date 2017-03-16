@@ -46,7 +46,7 @@ dependencies {
 </dependency>
 ```
 
-> ####使用方法
+> 使用方法
 
  	<com.sundar.sundarpinyintext.PinyinText
         android:id="@+id/textPT"
