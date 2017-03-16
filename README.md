@@ -82,3 +82,5 @@ dependencies {
         pinyinText_ttf.setPinyinTextSize(50);//拼音的大小
         pinyinText_ttf.setLineSpacing(20);//拼音和汉字之间的距离(默认是行距的一半)
 ```
+
+##### Email: SundarFung@gmail.com
