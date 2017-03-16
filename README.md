@@ -46,11 +46,10 @@ dependencies {
 </dependency>
 ```
 
-
-
-
+> 使用方法
+***
 ```
-    //汉字
+   	 //汉字
         textPT.setText(chineseNorText);
         textPT.setTextColor(0xefef6688);//颜色是8位16进制
         //汉字带字体
