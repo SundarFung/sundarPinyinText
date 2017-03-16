@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     PinyinText pinyin_ttf;
     //拼音汉字
     PinyinText pinyinTextPT;
+    //有间距的
+    PinyinText pinyinTextPT1;
     //拼音汉字带字体
     PinyinText pinyinText_ttf;
     @Override
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         pinyinPT = (PinyinText) findViewById(R.id.pinyinPT);
         pinyin_ttf = (PinyinText) findViewById(R.id.pinyin_ttf);
         pinyinTextPT = (PinyinText) findViewById(R.id.pinyinTextPT);
+        pinyinTextPT1 = (PinyinText) findViewById(R.id.pinyinTextPT1);
         pinyinText_ttf = (PinyinText) findViewById(R.id.pinyinText_ttf);
 
         init();
@@ -62,10 +65,15 @@ public class MainActivity extends AppCompatActivity {
         pinyin_ttf.setTextSize(60);
         //普通的拼音汉字结构
         pinyinTextPT.setPinyinText(pairList);
+        //普通带间距
+        pinyinTextPT1.setPinyinText(pairList);
+        pinyinTextPT1.setTextSize(50);
+        pinyinTextPT1.setVerticalSpacing(60);
+        pinyinTextPT1.setHorizontalSpacing(100);
         //普通的拼音汉字结构带字体,字体限制只对拼音有效
         pinyinText_ttf.setPinyinText(pairList,"mengmengda.ttf");
         pinyinText_ttf.setPinyinTextColor(0x889933FA);
         pinyinText_ttf.setPinyinTextSize(50);
-        pinyinText_ttf.setVerticalSpacing(100);
+        pinyinText_ttf.setVerticalSpacing(20);
     }
 }

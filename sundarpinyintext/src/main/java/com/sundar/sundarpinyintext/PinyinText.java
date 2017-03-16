@@ -268,8 +268,6 @@ public class PinyinText extends View {
      */
     public void setHorizontalSpacing(int px) {
         mHorizontalSpacing = px;
-        //汉字与拼音的距离是两行距离的一半
-        mPinyinTextSpacing = mHorizontalSpacing / 2;
         requestLayout();
         invalidate();
     }
@@ -279,8 +277,11 @@ public class PinyinText extends View {
      */
     public void setVerticalSpacing(int px) {
         mVerticalSpacing = px;
+        //汉字与拼音的距离是两行距离的一半
+        mPinyinTextSpacing = mVerticalSpacing / 2;
         requestLayout();
         invalidate();
+
     }
 
     /**

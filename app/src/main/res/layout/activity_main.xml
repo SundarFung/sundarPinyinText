@@ -10,7 +10,7 @@
         android:id="@+id/textPT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         />
     <com.sundar.sundarpinyintext.PinyinText
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textPT"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         />
     <com.sundar.sundarpinyintext.PinyinText
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_ttf"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         />
     <com.sundar.sundarpinyintext.PinyinText
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pinyinPT"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         />
     <com.sundar.sundarpinyintext.PinyinText
@@ -42,7 +42,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pinyin_ttf"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        />
+    <com.sundar.sundarpinyintext.PinyinText
+        android:id="@+id/pinyinTextPT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pinyinTextPT"
+        android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         />
 
@@ -50,8 +58,8 @@
         android:id="@+id/pinyinText_ttf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pinyinTextPT"
-        android:layout_marginTop="40dp"
+        android:layout_below="@+id/pinyinTextPT1"
+        android:layout_marginTop="28dp"
         android:layout_centerHorizontal="true"
         />
 
