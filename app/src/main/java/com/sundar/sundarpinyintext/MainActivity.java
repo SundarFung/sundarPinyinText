@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         pinyin_ttf.setTextSize(60);
         //普通的拼音汉字结构
         pinyinTextPT.setPinyinText(pairList);
-        //普通的拼音汉字结构带字体
+        //普通的拼音汉字结构带字体,字体限制只对拼音有效
         pinyinText_ttf.setPinyinText(pairList,"mengmengda.ttf");
         pinyinText_ttf.setPinyinTextColor(0x889933FA);
         pinyinText_ttf.setPinyinTextSize(50);

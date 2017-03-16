@@ -14,6 +14,7 @@ import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.Pair;
 import android.util.TypedValue;
 import android.view.View;
@@ -332,6 +333,9 @@ public class PinyinText extends View {
 
         mTextHeight = 0;
         mPinyinHeight = 0;
+
+        isHasType = false;
+        textType = "";
     }
 
     /***
@@ -518,6 +522,7 @@ public class PinyinText extends View {
             mPaint.setColor(mTextColor);
             mPaint.setTextSize(mTextSize);
             compat.textRect.offset(paddingLeft, paddingTop);
+            mPaint.setTypeface(null);
             canvas.drawText(compat.text, compat.textRect.left , compat.textRect.bottom, mPaint);
 
             // draw pinyin
