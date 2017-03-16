@@ -1,7 +1,8 @@
 可显示上拼音下汉字的text格式或普通text格式 该项目源于[pinyin-text-view](https://github.com/titanseason/pinyin-text-view)，对其做了一些修正后进行了进一步的优化与扩展
 
 
-![show.jpg](http://upload-images.jianshu.io/upload_images/4905074-deee3bcf7ca4f71c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/500)
+![1.0.6_1.jpg](http://upload-images.jianshu.io/upload_images/4905074-52608f6c5de9b05c.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ## Gradle:
 
