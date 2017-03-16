@@ -18,7 +18,7 @@ allprojects {
 #### Step 2.
 ```
 dependencies {
-      compile 'com.github.SundarFung:sundarPinyinText:1.0.5'
+      compile 'com.github.SundarFung:sundarPinyinText:1.0.6'
             }
 ```
 ## maven:
@@ -39,6 +39,6 @@ dependencies {
 <dependency>
     <groupId>com.github.SundarFung</groupId>
     <artifactId>sundarPinyinText</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 </dependency>
 ```
