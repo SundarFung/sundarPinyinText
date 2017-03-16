@@ -46,7 +46,16 @@ dependencies {
 </dependency>
 ```
 
-> 使用方法
+> ####使用方法
+
+ 	<com.sundar.sundarpinyintext.PinyinText
+        android:id="@+id/textPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        />
+	
 ***
 ```
    	 //汉字
