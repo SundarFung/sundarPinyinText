@@ -45,3 +45,32 @@ dependencies {
     <version>1.0.6</version>
 </dependency>
 ```
+
+
+
+
+```
+    //汉字
+        textPT.setText(chineseNorText);
+        textPT.setTextColor(0xefef6688);//颜色是8位16进制
+        //汉字带字体
+        text_ttf.setText(chineseNorText,"mengmengda.ttf");//设置非拼音汉字结构的字体
+        //拼音
+        pinyinPT.setText(pinyinNorText);
+        //拼音带字体
+        pinyin_ttf.setText(pinyinNorText,"mengmengda.ttf");
+        pinyin_ttf.setTextColor(0x88FF9912);
+        pinyin_ttf.setTextSize(60);
+        //普通的拼音汉字结构
+        pinyinTextPT.setPinyinText(pairList);
+        //普通带间距
+        pinyinTextPT1.setPinyinText(pairList);
+        pinyinTextPT1.setTextSize(50);//汉字的大小
+        pinyinTextPT1.setVerticalSpacing(60);//每行字之间的距离(字多换行间)
+        pinyinTextPT1.setHorizontalSpacing(100);//横向每个字之间的距离
+        //普通的拼音汉字结构带字体,字体限制只对拼音有效
+        pinyinText_ttf.setPinyinText(pairList,"mengmengda.ttf");//设置上下结构的拼音字体
+        pinyinText_ttf.setPinyinTextColor(0x889933FA);
+        pinyinText_ttf.setPinyinTextSize(50);//拼音的大小
+        pinyinText_ttf.setLineSpacing(20);//拼音和汉字之间的距离(默认是行距的一半)
+```
