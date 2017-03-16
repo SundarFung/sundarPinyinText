@@ -58,6 +58,20 @@ dependencies {
 	
 ***
 ```
+   String pinyinText="#yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# #";
+        String chineseText="#永#远# ____ 。#生日# ____！# #永#远# ____ 。#生日# ____！# #永#远# ____ 。#生日# ____！#";
+        String chineseNorText="生日生日生日生日";
+        String pinyinNorText="ShēngrìShēngrìShēngrì";
+        List<Pair<String, String>> pairList = new ArrayList<>();
+        String[] mChinese = chineseText.split("\\#");
+        String[] mPinyin = pinyinText.split("\\#");
+        for (int i = 0; i < mChinese.length; i++) {
+            if (i < mPinyin.length) {
+                pairList.add(Pair.create("" + mChinese[i], "" + mPinyin[i]));
+            }
+        }
+```
+```
    	 //汉字
         textPT.setText(chineseNorText);
         textPT.setTextColor(0xefef6688);//颜色是8位16进制
