@@ -58,7 +58,7 @@ dependencies {
 	
 ***
 ```
-   String pinyinText="#yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# #";
+   	String pinyinText="#yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# #";
         String chineseText="#永#远# ____ 。#生日# ____！# #永#远# ____ 。#生日# ____！# #永#远# ____ 。#生日# ____！#";
         String chineseNorText="生日生日生日生日";
         String pinyinNorText="ShēngrìShēngrìShēngrì";
