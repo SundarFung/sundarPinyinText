@@ -1,5 +1,10 @@
 
-## 目前更新到 1.0.6版本
+## 目前更新到 1.0.7版本
+
+####更新内容
+
+##### 1.0.7
+######     change minSdkVersion 为14，以便项目引用后正常使用。
 
 可显示上拼音下汉字的text格式或普通text格式 该项目源于[pinyin-text-view](https://github.com/titanseason/pinyin-text-view)，对其做了一些修正后进行了进一步的优化与扩展
 
@@ -21,7 +26,7 @@ allprojects {
 #### Step 2.
 ```
 dependencies {
-      compile 'com.github.SundarFung:sundarPinyinText:1.0.6'
+      compile 'com.github.SundarFung:sundarPinyinText:1.0.7'
             }
 ```
 ## maven:
@@ -42,7 +47,7 @@ dependencies {
 <dependency>
     <groupId>com.github.SundarFung</groupId>
     <artifactId>sundarPinyinText</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 
