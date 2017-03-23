@@ -3,8 +3,7 @@
 
 #### 更新内容
 
-##### 1.0.7
-######     change minSdkVersion 为14，以便项目引用后正常使用。
+##### 1.0.7 : change minSdkVersion 为14，以便项目引用后正常使用。
 
 可显示上拼音下汉字的text格式或普通text格式 该项目源于[pinyin-text-view](https://github.com/titanseason/pinyin-text-view)，对其做了一些修正后进行了进一步的优化与扩展
 
