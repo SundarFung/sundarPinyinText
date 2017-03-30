@@ -14,7 +14,6 @@ import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.Pair;
 import android.util.TypedValue;
 import android.view.View;
@@ -464,7 +463,7 @@ public class PinyinText extends View {
             }
         }
         // +10来避免拼音显示不全的问题
-        setMeasuredDimension(measuredWidth + paddingLeft + paddingRight + 10, measuredHeight + paddingTop + paddingBottom + 4);
+        setMeasuredDimension(measuredWidth + paddingLeft + paddingRight + 14, measuredHeight + paddingTop + paddingBottom + 6);
     }
 
     private void measurePlainText(int widthMeasureSpec, int heightMeasureSpec) {
@@ -491,7 +490,7 @@ public class PinyinText extends View {
                         (int) Math.ceil(Layout.getDesiredWidth(mTextString, mPaint)));
         int measuredHeight = modeHeight == MeasureSpec.EXACTLY ? sizeHeight : mStaticLayout.getHeight();
 
-        setMeasuredDimension(measuredWidth + paddingLeft + paddingRight + 10, measuredHeight + paddingTop + paddingBottom + 4);
+        setMeasuredDimension(measuredWidth + paddingLeft + paddingRight + 14, measuredHeight + paddingTop + paddingBottom + 6);
     }
 
     private void measureDefault(int widthMeasureSpec, int heightMeasureSpec) {
