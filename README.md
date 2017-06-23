@@ -63,7 +63,8 @@ dependencies {
 	
 ***
 ```
-   	String pinyinText="#yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# #";
+##### 长句子请务必用#号分割出需要的字或词，否则会把整个句子视为一个字，这样的话，句子长度到view边缘后无法正常换行！！！
+   	String pinyinText="#yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# # #yǒng#yuǎn# #Shēngrì# #";
         String chineseText="#永#远# ____ 。#生日# ____！# #永#远# ____ 。#生日# ____！# #永#远# ____ 。#生日# ____！#";
         String chineseNorText="生日生日生日生日";
         String pinyinNorText="ShēngrìShēngrìShēngrì";
