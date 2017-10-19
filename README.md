@@ -1,8 +1,9 @@
 
-## 目前更新到 1.0.8版本
+## 目前更新到 1.1.0版本
 
 #### 更新内容
 
+##### 1.1.0 : 增加居中对齐效果。
 ##### 1.0.8 : 在显示长度上做了调整，防止出现字符过长而显示不全问题。
 ##### 1.0.7 : change minSdkVersion 为14，支持4.0以上版本，以便项目引用后正常使用。
 
@@ -27,7 +28,7 @@ allprojects {
 #### Step 2.
 ```
 dependencies {
-      compile 'com.github.SundarFung:sundarPinyinText:1.0.8'
+      compile 'com.github.SundarFung:sundarPinyinText:1.1.0'
             }
 ```
 ## maven:
@@ -48,7 +49,7 @@ dependencies {
 <dependency>
     <groupId>com.github.SundarFung</groupId>
     <artifactId>sundarPinyinText</artifactId>
-    <version>1.0.8</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 
