@@ -523,7 +523,7 @@ public class PinyinText extends View {
             compat.textRect.offset(paddingLeft, paddingTop);
             mPaint.setTypeface(null);
             // 文字居中
-            int textHalfWidth = (compat.textRect.width() - getTextWidth(compat.text, mTextSize)) / 2;
+            int textHalfWidth = (compat.textRect.width() - getTextWidth(compat.text, mTextSize)) >> 1;
             canvas.drawText(compat.text, compat.textRect.left + textHalfWidth, compat.textRect.bottom, mPaint);
 
             // draw pinyin
@@ -536,7 +536,7 @@ public class PinyinText extends View {
                 mPaint.setTypeface(typeface);
             }
             // 拼音文字居中
-            int pinyinTextHalfWidth = (compat.pinyinRect.width() - getTextWidth(compat.pinyin, mPinyinTextSize)) / 2;
+            int pinyinTextHalfWidth = (compat.pinyinRect.width() - getTextWidth(compat.pinyin, mPinyinTextSize)) >> 1;
             canvas.drawText(compat.pinyin, compat.pinyinRect.left + pinyinTextHalfWidth, compat.pinyinRect.bottom, mPaint);
         }
     }
