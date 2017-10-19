@@ -446,12 +446,12 @@ public class PinyinText extends View {
             }
 
             compat.pinyinRect.left = lineLength - maxWidth;
-            compat.pinyinRect.right = compat.pinyinRect.left + pinyinWidth;
+            compat.pinyinRect.right = compat.pinyinRect.left + maxWidth;
             compat.pinyinRect.top = baseLine;
             compat.pinyinRect.bottom = compat.pinyinRect.top + mPinyinHeight;
 
             compat.textRect.left = lineLength - maxWidth;
-            compat.textRect.right = compat.textRect.left + textWidth;
+            compat.textRect.right = compat.textRect.left + maxWidth;
             compat.textRect.top = compat.pinyinRect.bottom + mPinyinTextSpacing;
             compat.textRect.bottom = compat.textRect.top + mTextHeight;
         }
@@ -510,7 +510,6 @@ public class PinyinText extends View {
     }
 
 
-
     private void drawPinyinAndText(Canvas canvas) {
         int paddingLeft = this.getPaddingLeft();
         int paddingTop = this.getPaddingTop();
@@ -523,7 +522,9 @@ public class PinyinText extends View {
             mPaint.setTextSize(mTextSize);
             compat.textRect.offset(paddingLeft, paddingTop);
             mPaint.setTypeface(null);
-            canvas.drawText(compat.text, compat.textRect.left , compat.textRect.bottom, mPaint);
+            // 文字居中
+            int textHalfWidth = (compat.textRect.width() - getTextWidth(compat.text, mTextSize)) / 2;
+            canvas.drawText(compat.text, compat.textRect.left + textHalfWidth, compat.textRect.bottom, mPaint);
 
             // draw pinyin
             mPaint.setColor(mPinyinTextColor);
@@ -534,7 +535,9 @@ public class PinyinText extends View {
                 Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), textType);
                 mPaint.setTypeface(typeface);
             }
-            canvas.drawText(compat.pinyin, compat.pinyinRect.left, compat.pinyinRect.bottom, mPaint);
+            // 拼音文字居中
+            int pinyinTextHalfWidth = (compat.pinyinRect.width() - getTextWidth(compat.pinyin, mPinyinTextSize)) / 2;
+            canvas.drawText(compat.pinyin, compat.pinyinRect.left + pinyinTextHalfWidth, compat.pinyinRect.bottom, mPaint);
         }
     }
 
